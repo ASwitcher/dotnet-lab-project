@@ -99,6 +99,61 @@ public struct Coordinate
     }
 }
 
+public enum MyKeyName
+{
+    Natural = 0,
+    Place = 1,
+    Boundary = 2,
+    Admin_level = 3,
+    Name = 4,
+    Highway = 5,
+    Water = 6,
+    Railway = 7,
+    Landuse = 8,
+    Building = 9,
+    Leisure = 10,
+    Amenity = 11,
+}
+
+public class GetEnumId
+{
+    public static int getEnumId(string key)
+    {
+        switch (key)
+        {
+            case ("natural"):
+                return 0;
+            case ("place"):
+                return 0;
+            case ("boundary"):
+                return 1;
+            case ("admin_level"):
+                return 2;
+            case ("name"):
+                return 4;
+            case ("highway"):
+                return 5;
+            case ("water"):
+                return 6;
+            case ("railway"):
+                return 7;
+            case ("landuse"):
+                return 8;
+            case ("building"):
+                return 9;
+            case ("leisure"):
+                return 10;
+            case ("amenity"):
+                return 11;
+            case ("waterway"):
+                return 12;
+            default:
+                return -1;
+        }
+    }
+}
+
+
 public enum GeometryType : byte
 {
     Polyline,
